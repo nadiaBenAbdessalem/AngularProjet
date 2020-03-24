@@ -1,0 +1,8 @@
+<app-childd (eventFromChild)="processRequest($event)" [childcolor]="color"></app-childd>
+
+<div [style.backgroundColor]="color">color</div>
+<input [(ngModel)] ="color"
+  type="text"
+  class="form-control">
+
+Le color est ......{{color}}

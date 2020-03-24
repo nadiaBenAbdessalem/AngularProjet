@@ -1,0 +1,30 @@
+<div class="alert alert-danger" [hidden]="!error">
+  There was a problem logging in. Please try again.
+</div>
+
+
+<div class="fullscreen-bg">
+  <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+    <source src="assets/images/rain1.mov" type="video/mp4">
+  </video>
+</div>
+
+<div class="imgcontainer">
+  <img src="assets/images/img_avatar1.png" alt="Avatar" class="avatar">
+</div>
+
+<div class="container">
+  <form role="form" (submit)="login()">
+    <div class="form-group">
+      <label for="name">Name:</label> <input type="text"
+                                             class="form-control" id="name" name="name" [(ngModel)]="name" placeholder="NAME"/>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label> <input type="password"
+                                                     class="form-control" id="password" name="password" [(ngModel)]="password" placeholder="PASSWORD"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <a href="/forgot-password">Forgot Password?</a>
+  </form>
+</div>
